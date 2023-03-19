@@ -25,10 +25,11 @@ button {
 
 .gallery {
   padding: 0;
-  
+
 display: flex;
-justify-content: space-around;
-align-items: center;
+flex-wrap: wrap;
+justify-content: space-evenly;
+row-gap: 20px;
 
 list-style: none;
 }
