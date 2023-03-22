@@ -14,5 +14,5 @@ function onChange(event) {
 
 span.textContent = getRandomHexColor();
 body.style.backgroundColor = getRandomHexColor();
-  
+
 };
