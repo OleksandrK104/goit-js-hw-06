@@ -15,13 +15,17 @@ const images = [
 
 const makeListImagesMarkup = ({url, alt}) => {
   return `
-      <li class="gallery-item">
-        <img class="gallery-img" src="${url}" alt="${alt}">
+      <li>
+        <img src="${url}" alt="${alt}" width="420">
       </li>`;
 };
 
 const makeListImages = images.map(makeListImagesMarkup).join('');
 
 const galleryEl = document.querySelector('.gallery');
+galleryEl.style.display = 'flex';
+galleryEl.style.justifyContent = 'space-evenly';
+galleryEl.style.padding = 0;
+galleryEl.style.listStyle = 'none';
 galleryEl.insertAdjacentHTML('afterbegin', makeListImages);
 
